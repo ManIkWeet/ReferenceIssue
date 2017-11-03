@@ -1,0 +1,23 @@
+﻿<Window x:Class="MainProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Issue">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ImportantProject;component/ImportantResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <ItemsControl>
+            <TextBox Text="Hello" Background="{StaticResource ImportantBrush}"/>
+            <TextBox Text="strange" Background="{StaticResource ImportantBrush}"/>
+            <TextBox Text="reference" Background="{StaticResource ImportantBrush}"/>
+            <TextBox Text="issue" Background="{StaticResource ImportantBrush}"/>
+        </ItemsControl>
+    </Grid>
+</Window>
